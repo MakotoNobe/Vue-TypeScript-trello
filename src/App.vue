@@ -22,7 +22,7 @@
       </div>
     </v-app-bar>
 
-    <v-main>
+    <v-main class="overflow-x-auto main-bg">
       <router-view />
     </v-main>
   </v-app>
@@ -40,3 +40,9 @@ export default Vue.extend({
   }),
 });
 </script>
+<style scoped>
+.main-bg{
+  background-image:url(https://cdn.vuetifyjs.com/images/parallax/material.jpg);
+  background-repeat: repeat;
+}
+</style>
